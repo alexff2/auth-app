@@ -1,0 +1,61 @@
+.tab-users{
+  background: rgb(0, 0, 0, .25);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+th{
+  color: black;
+}
+.btnDelEdit :hover{
+  cursor: pointer;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.modal-container {
+  animation: modal .3s;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  padding: 40px;
+  width: 30%;
+  min-width: 300px;
+  max-width: 400px;
+  background-color: white;
+  color: #7159c1;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.fechaModal {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.field-modal input {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 1px solid rgb(0, 0, 0, .25);
+  border-radius: 5px;
+}
